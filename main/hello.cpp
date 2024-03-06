@@ -6,7 +6,6 @@ int main(void) {
   cout << "Hello, World\n";
   cout << "Hello, Jenkins\n";
   cout << "I have successfully built and run\n";
-  cout << "My SRN is PES1UG22CS852\n";
   cout << "WEBHOOK has been added successfully\n";
   return 0;
 }
