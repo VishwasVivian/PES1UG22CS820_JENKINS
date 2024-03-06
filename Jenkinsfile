@@ -8,18 +8,18 @@ pipeline{
           //             userRemoteConfigs: [[url: 'https://github.com/VishwasVivian/PES1UG22CS852_JENKINS.git']]])
           //               }
           //         }
-          stages('Build'){
+          stage('Build'){
                 steps{
                       build 'PES1UG22CS852-1'
                       sh 'g++ main.cpp -o output'
                   }
           }
-          stages('Test'){
+          stage('Test'){
                 steps{
                       sh './output'
                   }
           }
-          stages('Deploy'){
+          stage('Deploy'){
                 steps{
                       echo 'deploy'
                   }
